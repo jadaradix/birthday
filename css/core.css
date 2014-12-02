@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 16px;
+  font-family: "Source Sans Pro", "Arial", "Helvetica", sans-serif;
+  background-color: rgb(96, 96, 96);
+}
+
+h1 {
+  margin-bottom: 16px;
+  font: 24px "Montserrat", "Arial", "Helvetica", sans-serif;
+  text-transform: uppercase
+}
+
+div.display-box {
+  width: 100%;
+  max-width: 640px;
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 4px;
+  background-color: rgb(224, 224, 224);
+  color: black;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-radius: 4px;
+}
+
+th, td {
+  border: 2px solid rgb(172, 172, 172);
+  padding: 8px;
+}
+
+th {
+  background-color: rgb(172, 172, 172);
+}
