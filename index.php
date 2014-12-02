@@ -40,7 +40,7 @@
   }
 
   // Debug
-  var_dump($peopleData);
+  // var_dump($peopleData);
 
   // Make a Table class with the key based array
   $peopleTable = new Table($peopleData);

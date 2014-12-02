@@ -20,30 +20,34 @@
     }
 
     public function output($format = "html", $tab = "") {
+      $r = "";
       switch($format) {
         case "html":
-          echo $tab . "<table>" . PHP_EOL;
+          $r = "";
+          $r .= $tab . "<table>" . PHP_EOL;
           // Columns
-          echo $tab . " <thead>" . PHP_EOL;
-          echo $tab . "   <tr>" . PHP_EOL;
+          $r .= $tab . " <thead>" . PHP_EOL;
+          $r .= $tab . "   <tr>" . PHP_EOL;
           foreach($this->columns as $column) {
-            echo $tab . "     <th>" . $column . "</th>" . PHP_EOL;
+            $r .= $tab . "     <th>" . $column . "</th>" . PHP_EOL;
           }
-          echo $tab . "   </tr>" . PHP_EOL;
-          echo $tab . " </thead>" . PHP_EOL;
+          $r .= $tab . "   </tr>" . PHP_EOL;
+          $r .= $tab . " </thead>" . PHP_EOL;
           // Data
-          echo $tab . " <tbody>" . PHP_EOL;
+          $r .= $tab . " <tbody>" . PHP_EOL;
           foreach($this->data as $row) {
             $rowValues = array_values($row);
-            echo $tab . "   <tr>" . PHP_EOL;
+            $r .= $tab . "   <tr>" . PHP_EOL;
             foreach($rowValues as $value) {
-              echo $tab . "     <td>" . $value . "</td>" . PHP_EOL;
+              $r .= $tab . "     <td>" . $value . "</td>" . PHP_EOL;
             }
-            echo $tab . "   </tr>" . PHP_EOL;
+            $r .= $tab . "   </tr>" . PHP_EOL;
           }
-          echo $tab . " </tbody>" . PHP_EOL;
-          echo $tab . "</table>" . PHP_EOL;
+          $r .= $tab . " </tbody>" . PHP_EOL;
+          $r .= $tab . "</table>" . PHP_EOL;
+          break;
       }
+      return $r;
     }
 
   }
