@@ -3,6 +3,8 @@ birthday
 
 PHP. People with whom I am romantically compatible and their star signs.
 
+![Birthday in Chrome](http://s8.postimg.org/8lgokjfgl/birthday.png)
+
 I'll add some Sass, Grunt and Jade when time allows.
 
 Instructions
